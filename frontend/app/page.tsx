@@ -4,6 +4,22 @@ import { useState } from "react";
 // Use environment variable or default to Docker service name
 const API_URL = process.env.NEXT_PUBLIC_API_URL || "http://backend:8000";
 
+interface CalcResult {
+  input_numbers?: number[];
+  sum?: number;
+  product?: number;
+  difference?: number;
+  is_sum_even?: boolean;
+}
+
+interface TextResult {
+  original: string;
+  uppercase: string;
+  word_count: number;
+  character_count: number;
+  reversed: string;
+  contains_spaces?: boolean;
+}
 
 export default function Home() {
   // State for calculator

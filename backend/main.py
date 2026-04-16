@@ -12,8 +12,6 @@ app.add_middleware(
     allow_headers=["*"],
 )
 
-# ... rest of your FastAPI code
-
 @app.get("/calculate/{num1}/{num2}")
 def calculate(num1: int, num2: int):
     # Process the numbers

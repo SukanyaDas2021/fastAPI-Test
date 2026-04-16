@@ -3,7 +3,7 @@ version: "3.8"
 services:
   backend:
     build: ./backend
-    container_name: fastapi-backend
+    container_name: backend
     ports:
       - "8000:8000"
     networks:
@@ -12,7 +12,7 @@ services:
 
   frontend:
     build: ./frontend
-    container_name: nextjs-frontend
+    container_name: frontend
     ports:
       - "3000:3000"
     depends_on:
