@@ -2,7 +2,8 @@
 import { useState } from "react";
 
 // Use environment variable or default to Docker service name
-const API_URL = process.env.NEXT_PUBLIC_API_URL || "http://backend:8000";
+//const API_URL = process.env.NEXT_PUBLIC_API_URL || "http://backend:8000";
+const API_URL = "/api";
 
 interface CalcResult {
   input_numbers?: number[];
