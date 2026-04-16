@@ -25,11 +25,11 @@ export default function Home() {
   // State for calculator
   const [num1, setNum1] = useState("");
   const [num2, setNum2] = useState("");
-  const [calcResult, setCalcResult] = useState(null);
+  const [calcResult, setCalcResult] = useState<CalcResult | null>(null);
 
   // State for text analyzer
   const [text, setText] = useState("");
-  const [textResult, setTextResult] = useState(null);
+  const [textResult, setTextResult] = useState<TextResult | null>(null);
 
   // Call FastAPI calculate endpoint
   const handleCalculate = async () => {
